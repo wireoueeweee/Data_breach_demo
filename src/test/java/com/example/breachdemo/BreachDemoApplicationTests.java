@@ -1,13 +1,12 @@
-package com.example.optus_demo;
+package com.example.breachdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OptusDemoApplicationTests {
+class BreachDemoApplicationTests {
 
     @Test
     void contextLoads() {
     }
-
 }
