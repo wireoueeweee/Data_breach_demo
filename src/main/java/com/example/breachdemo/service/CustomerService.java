@@ -5,6 +5,7 @@ import com.example.breachdemo.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class CustomerService {
@@ -21,5 +22,13 @@ public class CustomerService {
 
     public long count() {
         return repository.count();
+    }
+
+    public Optional<Customer> findByOwner(String ownerUsername) {
+        return repository.findByOwnerUsername(ownerUsername);
+    }
+
+    public Optional<Customer> findByPublicId(UUID publicId) {
+        return repository.findByPublicId(publicId);
     }
 }
